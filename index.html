@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="index.js" type="module"></script>
+</head>
+<body style="font-family: sans-serif"> <!--Setting up textfont for all documents, py sets padding on y-axis-->
+    <nav class="navbar navbar-expand-md sticky-top py-1 shadow navbar-dark" id="mainNav" style="background-color:#2d2c38; display: none;">
+        <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/"><span class="d-flex justify-content-center align-items-center"><h6 class="navtext brandtext">Quickbook</h6></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown text-center admin-only">
+                        <a class="nav-link dropdown-toggle navtext m-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Admin funktioner
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-center">
+                          <li style="min-width: 250px;"><a class="dropdown-item" href="/hotel-create" data-navigo>Opret hotel</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li style="min-width: 250px;"><a class="dropdown-item" href="/hotel-edit-delete" data-navigo>Opdater/Delete hotel</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li style="min-width: 250px;"><a class="dropdown-item" href="/rooms" data-navigo>Tilføj rum</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-3" href="/hotels" data-navigo><h6 class="navtext">Hoteller</h6></a>
+                    </li>
+                    <li class="nav-item guest-only">
+                        <a class="nav-link m-3" href="/profile" data-navigo><h6 class="navtext">Mine reservationer</h6></a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-success shadow m-1" style="max-width: 90px;" id="signup-container" role="button" href="/signup" data-navigo>
+                    <div class="d-flex align-items-center justify-content-center" style="height: 100%;">Sign up</div>
+                </a>
+                <a class="btn btn-outline-success shadow m-1" style="max-width: 90px;" id="login-container" role="button" href="/login" data-navigo>
+                    <div class="d-flex align-items-center justify-content-center" style="height: 100%;">Login</div>
+                </a>
+                <a class="btn btn-outline-success shadow m-1" style="max-width: 90px;" id="logout-container" role="button" href="/logout" data-navigo>
+                    <div class="d-flex align-items-center justify-content-center" style="height: 100%;">Logout</div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div id="content" style="margin-bottom: 50px;">
+        
+    </div>
+    <footer style="margin-top: auto; background-color: rgb(45, 44, 56);">
+        <div class="container">
+            <hr>
+            <div class="d-flex text-center align-items-center justify-content-center" style="font-size: 14px; padding: 10px;">
+                <p style="color: white;">Copyright © 2024 Quickbook</p>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

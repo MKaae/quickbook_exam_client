@@ -1,0 +1,140 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navtext {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navtext:hover {
+  color: #cccccc;
+}
+
+.brandtext {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #f0c03a;
+}
+/* These containers could have been joined together by remaining either class or id for all of them they do the same */
+#signup-form-container { 
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#login-form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#create-hotel-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#edit-hotel-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#edit-delete-hotel-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#rooms-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+#form-box {
+  display: flex;
+  margin-top: 30px;
+  width: 60%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+/* Speciel media query to flip the columns in form boxes */
+@media (max-width: 768px) {
+  #form-box {
+    width: 100%;
+    max-width: 400px;
+    flex-direction: column-reverse;
+  }
+/* !important when using bootstrap it prioritizes this effect */
+  #left-form-box {
+    width: 100% !important;
+  }
+
+  #right-form-box {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #fp-text {
+    font-size: 60px !important;
+  }
+}
+
+#left-form-box {
+  width: 50%;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+#right-form-box {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background: linear-gradient(to right, #198754, 70%, #2dcf83);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 15px;
+  justify-content: center;
+}
+
+#btn-outline-success {
+  min-width: 200px;
+}
+.btn-dark {
+  background-color: #2d2c38;
+}
+/* This could just have been a media query can't remember what i was trying */
+@media 
+only screen and (max-width: 760px)  {
+
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+/* Throws the table headers away -> i tried positioning them never figured it out */
+  thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+}
+.above-select label {
+  display: block;
+  margin-bottom: 5px;
+}
+/* Another media query for sizing on screens */
+@media (max-width: 768px) {
+  #hotelSelect{
+    width: 100px !important;
+  }
+}

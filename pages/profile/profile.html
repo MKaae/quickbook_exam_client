@@ -1,0 +1,32 @@
+<div class="template m-5 w-75 mx-auto text-center col-lg">
+    <table class="table table-light table-striped">
+        <thead>
+            <tr id="header-row">
+                <th>Reservations id </th>
+                <th>Reservationsdato</th>
+                <th>Pris</th>
+                <th>Værelsesnummer</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="reservation-delete-body"></tbody>
+    </table>
+    <div class="modal fade" id="reservationsModal" tabindex="-1" aria-labelledby="reservationsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="reservationsModalLabel">Vil du slette denne reservation?</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Luk</button>
+              <button type="button" class="btn btn-primary" id="delete-res-btn">Slet reservation</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

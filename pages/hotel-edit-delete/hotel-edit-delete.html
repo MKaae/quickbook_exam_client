@@ -1,0 +1,34 @@
+<div class="template m-5 w-75 mx-auto text-center col-lg">
+    <table class="table table-light table-striped">
+        <thead>
+            <tr id="header-row"> <!--Sort directions-->
+                <th id="sort-name" data-sort_direction="asc">Hotelnavn <i class="fa fa-sort"></i></th>
+                <th id="sort-street" data-sort_direction="asc">Addresse <i class="fa fa-sort"></i></th>
+                <th id="sort-city" data-sort_direction="asc">By <i class="fa fa-sort"></i></th>
+                <th id="sort-zip" data-sort_direction="asc">Zipkode <i class="fa fa-sort"></i></th>
+                <th id="sort-country" data-sort_direction="asc">Land <i class="fa fa-sort"></i></th>
+                <th id="sort-rooms" data-sort_direction="asc">Antal værelser <i class="fa fa-sort"></i></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="hotel-table-body"></tbody>
+    </table>
+    <ul class="pagination" id="pagination"></ul> <!-- Where it displays pagination -->
+      <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 text-center" id="editModalLabel">Er du helt sikker på du vil slette dette hotel?</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal-button"></button>
+            </div>
+            <div class="modal-body text-center">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Luk modal</button>
+              <button type="button" class="btn btn-primary" id="delete-button">Slet hotel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="template m-5 w-75 mx-auto text-center col-lg">
+  <!-- <div class="col-md-4 above-select">
+    <label for="date-input"><h5>Vælg reservations dato</h5></label>
+    <input type="date" id="date-input" style="width: 200px; min-height: 30px;"></input>
+    <div id="error-text2"></div> 
+  </div> -->
+<table class="table table-light table-striped">
+    <thead>
+        <tr id="header-row">
+            <th>Værelsesnummer </th>
+            <th>Antal ledige senge</th>
+            <th>Pris</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="room-details-body"></tbody>
+</table>
+  <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="reservationModalLabel">Vil du reservere dette værelse?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-date m-2">
+            <input type="date" id="reservation-date" placeholder="Vælg en dato">
+        </div>
+        <div id="error-text">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Luk</button>
+          <button type="button" class="btn btn-primary" id="reservation-btn">Reserver værelse</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

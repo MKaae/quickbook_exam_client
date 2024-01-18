@@ -1,0 +1,30 @@
+<div class="template m-5 w-75 mx-auto text-center col-lg">
+    <!-- <div class="col-md-4 above-select">
+        <label for="hotel-options"><h5>Vælg muligheder</h5></label>
+        <select id="hotel-options" style="width: 200px; min-height: 30px;">
+            <option value="">Alle hoteller</option>
+            <option value="seaview">Hoteller med udsigt til havet</option>
+            <option value="parking">Hoteller med parkering</option>
+            <option value="breakfast">Hoteller med morgenmad</option>
+            <option value="citydistance">Hoteller tæt på en by</option>
+            <option value="pool">Hoteller med pool</option>
+        </select>
+        <button class="btn btn-primary" id="hotel-options-button">Søg</button>
+    </div> -->
+    <table class="table table-light table-striped">
+        <thead>
+            <tr id="header-row">
+                <th id="sort-name" data-sort_direction="asc">Hotelnavn <i class="fa fa-sort"></i></th>
+                <th id="sort-street" data-sort_direction="asc">Addresse <i class="fa fa-sort"></i></th>
+                <th id="sort-city" data-sort_direction="asc">By <i class="fa fa-sort"></i></th>
+                <th id="sort-zip" data-sort_direction="asc">Zipkode <i class="fa fa-sort"></i></th>
+                <th id="sort-country" data-sort_direction="asc">Land <i class="fa fa-sort"></i></th>
+                <th id="sort-rooms" data-sort_direction="asc">Antal værelser <i class="fa fa-sort"></i></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="hotel-table-body"></tbody>
+    </table>
+    <ul class="pagination" id="pagination"></ul>
+</div>
